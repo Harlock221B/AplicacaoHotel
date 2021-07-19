@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/reserva.css' %}">
+    <title>Reserva</title>
+    <link href="reserva.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'home' %}">Hotel Experience</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="{% url 'hoteis' %}" id="navbarDarkDropdownMenuLink"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Hoteis
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Hoteis Disponiveis</a></li>
+                <li><a class="dropdown-item" href="#">Avaliação do Mês</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'login' %}" id="navbarDarkMenuLink" role="button" data-bs-toggle="" aria-expanded="false">
+                Login
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'reserva' %}" id="navbarDarkMenuLink" role="button" data-bs-toggle="" aria-expanded="false">
+                Reserva
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'cadastro' %}" id="navbarDarkMenuLink" role="button" data-bs-toggle="" aria-expanded="false">
+                Cadastro
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'sobre' %}" id="navbarDarkMenuLink" role="button" data-bs-toggle="" aria-expanded="false">
+                Sobre Nós
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <div class="contact-form">
+    <h2>Vitória Hotel</h2>
+    <form action="">
+        <p>Check-in</p>
+        <input id="check-in" name="DATA_Inicio" type="date" placeholder="DD/MM/AAAA" class="input-small">
+        <p>Check-out</p>
+        <input id="check-out" name="DATA_Final" type="date" placeholder="DD/MM/AAA" class="input-small">
+        <p>Qtd quartos</p>
+        <select id="qtde" name="qtd" class="input-medium" multiple="multiple">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>...</option>
+        </select>
+        <input type="submit" value="Reservar">
+    </form>
+</div>
+</body>
+</html>

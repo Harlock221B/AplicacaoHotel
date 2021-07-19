@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body:before{
+    content: '';
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://vitoriahoteis.com.br/wp-content/uploads/2018/12/Hotel-Concept-Campinas_18.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+}
+
+.contact-form{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 500px;
+    padding: 80px 40px;
+    background: rgba(0,0,0,0.6);
+}
+
+.contact-form h2{
+    margin: 0;
+    padding: 0 0 20px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contact-form p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.contact-form input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contact-form input[type=date]{
+   border:none;
+   border-bottom: 1px solid #000;
+   background: transparent;
+   outline: none;
+   height: 35px;
+   color: #fff;
+   font-size: 15px
+}
+.contact-form input[type=submit]{
+    height: 30px;
+    color: #fff;
+    font-size: 15px;
+    background: red;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    margin-top: 15%;
+}
+
+
+

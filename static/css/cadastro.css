@@ -1,0 +1,73 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+.main-head{
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+   
+}
+
+.sidenav {
+    height: 10px;
+    background-color: #000;
+    overflow-x: hidden;
+    padding-top: 190px;
+    align-items: center;
+}
+
+
+.main {
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 10px){
+    .main{
+        margin-left: 55%; 
+        width: 50%;
+        height: 70%;
+
+    }
+
+    .sidenav{
+        width: 20%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .cadastro-form{
+        margin-top: 10%;
+    }
+
+}
+
+    .login-main-text{
+    margin-top: 20%;
+    padding: 60px;
+    color: #fff;
+    margin-left: 250px;
+    font-weight: 500px;
+    }
+
+    .btn-black{
+    background-color: black;
+    color: #fff;
+    width: 200px;
+}
