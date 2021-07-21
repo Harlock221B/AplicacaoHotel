@@ -20,14 +20,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="{% url 'hoteis' %}" id="navbarDarkDropdownMenuLink"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Hoteis
+            <li class="nav_item">
+              <a class="nav-link" href="{% url 'hoteis' %}" id="navbarDarkDropdownMenuLink"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Principais Hoteis
               </a>
-              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Hoteis Disponiveis</a></li>
-                <li><a class="dropdown-item" href="#">Avaliação do Mês</a></li>
-              </ul>
             </li>
           </ul>
           <ul class="navbar-nav">
@@ -48,6 +44,20 @@
             <li class="nav-item">
               <a class="nav-link" href="{% url 'cadastro' %}" id="navbarDarkMenuLink" role="button" data-bs-toggle="" aria-expanded="false">
                 Cadastro
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'cliente' %}" id="navbarDarkMenuLink" role="button" data-bs-toggle="" aria-expanded="false">
+                Clientes Cadastrados
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'hoteis_reservados' %}" id="navbarDarkMenuLink" role="button" data-bs-toggle="" aria-expanded="false">
+                Hoteis Reservados
               </a>
             </li>
           </ul>
