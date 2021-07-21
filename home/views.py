@@ -13,9 +13,6 @@ def index(request):
 def login(request):
     return render(request, 'login.html')
 
-def cad_user(request):
-    return render(request, 'cad_user.html')
-
 def sobre(request):
     return render(request, 'sobre_nos.html')
 
@@ -40,7 +37,7 @@ def insere_cliente(request):
         sql = 'insert into tbcliente(nome, idade, telefone, cpf, email, senha) values(%s, %s, %s, %s, %s, %s)'
         inserir.execute(sql, (nome, idade, telefone, cpf, email, senha))
         con.commit()
-    return render(request, 'cad_user.html')
+    return render(request, 'cadastro.html')
 
 def insere_reserva(request):
     nome = request.POST.get('nome')

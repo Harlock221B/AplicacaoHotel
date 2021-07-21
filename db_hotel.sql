@@ -69,8 +69,8 @@ CREATE TABLE `tbreserva` (
 --
 
 INSERT INTO `tbreserva` (`id`, `nome`, `cpf`, `telefone`, `hotel`, `dias_reservados`, `num_quartos`, `num_adultos`, `num_criancas`) VALUES
-(1, 'Marcos Vinicius C Correa', '123.456.789', '(19) 1578-5484', NULL, 3, 1, 1, 0),
-(2, 'Marcos Vinicius Cardoso Correa', '123.456.789', '19 9875-25079', 'Hotel Dracula', 3, 2, 2, 2);
+(1, 'Gabriel Ferreira', '123.456.789', '(19) 1578-5484', NULL, 3, 1, 1, 0),
+(2, 'Vitoria Izaini', '123.456.789', '19 9875-25079', 'Hotel Vitória', 3, 2, 2, 2);
 
 --
 -- Índices para tabelas despejadas
