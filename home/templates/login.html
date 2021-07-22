@@ -1,37 +1,43 @@
+{%extends 'layout.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="=pt-br">
-
-<head>
-   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-   <link rel="stylesheet" href="{% static 'css/estilo.css' %}">
-   <!------ Include the above in your HEAD tag ---------->
-</head>
-
-<div class="sidenav">
-   <div class="login-main-text">
-      <h2>Login</h2>
-   </div>
-</div>
-<div class="main">
-   <div class="col-md-6 col-sm-12">
-      <div class="login-form">
-         <form>
-            <div class="form-group">
-               <label>EMAIL</label>
-               <input type="text" class="form-control" placeholder="Email">
+{%block 'conteudo'%}
+<div class="ctr">
+    <div class="login-tudo">
+      <h1>LOGIN</h1>
+      <div class="login">
+        <form role="form">
+          <fieldset>
+            <div class="usuario">
+              <label for="userLogin"><h5>Usuário:</h5></label>
+              <input
+                class="us"
+                id="userLogin"
+                type="text"
+                aria-label="Usuário"
+                placeholder="Usuário"
+              />
             </div>
-            <div class="form-group">
-               <label>SENHA</label>
-               <input type="password" class="form-control" placeholder="Senha">
+
+            <div class="senha">
+              <label for="userPassword"><h5>Senha:</h5></label>
+              <input
+                class="us"
+                type="password"
+                aria-label="Senha"
+                placeholder="Senha"
+              />
             </div>
-            <button type="submit" class="btn btn-black">Login</button>
-            <button type="submit" class="btn btn-secondary">Cadastrar</button>
-         </form>
+
+            <button class="btn_entrar">
+              <a href="{% url 'hoteis_reservados' %}">ENTRAR</a>
+            </button>
+            <p class="cadastro">
+              Não possui cadastro?
+              <a href="{% url 'cadastro' %}">Cadastre-se agora</a>
+            </p>
+          </fieldset>
+        </form>
       </div>
-   </div>
-</div>
-
-</html>
+    </div>
+  </div> 
+    {%endblock%}

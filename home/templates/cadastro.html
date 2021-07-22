@@ -1,20 +1,26 @@
+{%extends 'layout.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="=pt-br">
-
-<head>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <link rel="stylesheet" href="{% static 'css/cadastro.css' %}">
-    <!------ Include the above in your HEAD tag ---------->
-</head>
-    <body>
-        <div class="sidenav">
-            <div class="login-main-text">
-                <h2>Cadastro</h2>
-            </div>
-        </div>
+{%block 'conteudo'%}
+<style>
+  .centro{
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .main{
+    width: 100%;
+    height: 680px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+</style>
+      <div class="centro"> 
+        <h1>CADASTRO</h1>
+      </div>
         <div class="main">
             <div class="col-md-6 col-sm-12">
                 <div class="cadastro-form">
@@ -72,5 +78,4 @@
                 </div>
             </div>
         </div>
-    </body>
-</html>
+  {%endblock%}

@@ -1,0 +1,75 @@
+body{
+	font-family: "Lato", sans-serif;
+	background-color:white;
+	
+}
+
+.login{
+	width:50px;
+	height:152px;
+	align-items: center;
+	background-color:white;
+	justify-content: center;
+	border-radius: 10px;
+}
+
+.login-tudo{
+	width:50px;
+	height:152px;
+	align-items: center;
+}
+
+.usuario{
+	margin-top:50px;
+	margin-left:50px;
+	width:50px;
+	height:60px;
+	align-items: center;
+	border-radius: 10px;
+}
+.senha{
+	margin-left:50px;
+	width:50px;
+	height:60px;
+	align-items: center;
+	
+}
+fieldset{
+	position:absolute;
+		left:50%;
+		top:35%;
+		margin-left:-160px;
+		margin-top:-70px;
+		width:30%;
+		height:50%;
+		border-radius: 10px 20px;
+}
+.botao{
+	    margin-left:40px;
+	    height:30px;
+	    width:80%;
+		background-color:black;
+		color:white;
+		margin-top:15px;
+}
+.cm_senha,.us{
+	    margin-left:20px;
+	    height:25px;
+	    width:250px;
+}
+
+.cadastro{
+	   margin-left:40px;
+}
+.titulo{
+		position:absolute;
+		left:50%;
+		top:35%;
+		margin-left:-160px;
+		margin-top:-54px;
+		width:30%;
+		height:50%;
+		border-radius: 10px 20px;
+		font-size:30px;
+		text-align:center;
+}

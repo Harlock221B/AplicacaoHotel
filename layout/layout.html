@@ -28,7 +28,25 @@
         text-align:center;
         font-size:30px;
       }
-  
+      
+      .ctr{
+        width: 100%;
+        height: 740px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+      .btn_entrar{
+        background-color:black;
+        height: 30px;
+        width: 40%;
+        color:white;
+        text-align:center;
+        font-size:15px;
+      }
       .b{
         background-color:white;
         height: 50px;
@@ -64,6 +82,13 @@
           </ul>
           <ul class="navbar-nav">
             <li class="nav-item">
+              <a class="nav-link" href="{% url 'cadastro' %}" id="navbarDarkMenuLink" role="button" data-bs-toggle="" aria-expanded="false">
+                CADASTRO
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
               <a class="nav-link" href="{% url 'login' %}" id="navbarDarkMenuLink" role="button" data-bs-toggle="" aria-expanded="false">
                 LOGIN
               </a>
@@ -71,12 +96,11 @@
           </ul>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'cadastro' %}" id="navbarDarkMenuLink" role="button" data-bs-toggle="" aria-expanded="false">
-                CADASTRAR
+              <a class="nav-link" href="{% url 'reserva' %}" id="navbarDarkMenuLink" role="button" data-bs-toggle="" aria-expanded="false">
+                RESERVAR
               </a>
             </li>
           </ul>
-          
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="{% url 'sobre' %}" id="navbarDarkMenuLink" role="button" data-bs-toggle="" aria-expanded="false">
